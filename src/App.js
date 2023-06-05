@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/Navbar';
+import SideNav from './components/SideNav';
+
+import React from 'react';
+import AppNavMenu from './components/navigation/AppNavMenu';
+import { Box } from '@mui/material';
+import {appWrapper} from '../src/styles/styles'
+import AppContentArea from './components/AppContentArea';
+
+
 
 function App() {
+  const [mobileOpen, setMobileOpen]= React.useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen((v) => !v);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={appWrapper}>
+      <AppNavMenu handleDrawerToggle={handleDrawerToggle} />
+      <AppContentArea isOpen={mobileOpen}/>
+    </Box>
+    
+    // <>
+    // <NavBar/>
+    //  {/* <SideNav/> */}
+    // </>
   );
 }
 
