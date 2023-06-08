@@ -16,13 +16,17 @@ const SideList = () => {
     <Box sx={sideListWrapper}>
       {sideListItems.map((item) => {
         return (
-          <React.Fragment key={item.id } >
+          <React.Fragment key={item.id}>
             {item.subdivision ? (
               <>
                 <Divider />
                 <Box sx={{ ml: 2, mt: 2 }}>
                   <Typography
-                    sx={{ textTransform: 'uppercase', fontWeight: 'bold' }}
+                    sx={{
+                      textTransform: 'uppercase',
+                      fontWeight: 'bold',
+                      color: 'white',
+                    }}
                     variant="button"
                     display="block"
                     gutterBottom
@@ -37,9 +41,14 @@ const SideList = () => {
               <nav aria-label="Side list items">
                 <List sx={{ p: 0 }}>
                   <ListItem disablePadding>
-                    <ListItemButton>
+                    <ListItemButton sx={{ ':hover': { backgroundColor: 'rgba(255, 255, 255, 0.1)' } }}> 
                       <ListItemIcon>{item.icon}</ListItemIcon>
-                      <ListItemText primary={item.text} />
+                      <ListItemText
+                        primary={item.text}
+                        primaryTypographyProps={{
+                          sx: { color: 'white' },
+                        }}
+                      />
                     </ListItemButton>
                   </ListItem>
                 </List>
@@ -50,6 +59,7 @@ const SideList = () => {
       })}
     </Box>
   );
+  
 };
 
 export default SideList;
