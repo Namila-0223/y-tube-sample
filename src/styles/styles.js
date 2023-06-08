@@ -1,5 +1,7 @@
 // A bunch of common styles exported as  objects
 
+import { colors } from "@mui/material";
+
 /***********************
  * App.js
  ************************/
@@ -23,7 +25,7 @@ export const appWrapper = {
   };
   
   export const appBar = {
-    backgroundColor: 'white',
+    backgroundColor: '#0B0B2C',
     color: '#000',
   };
   
@@ -37,6 +39,7 @@ export const appWrapper = {
     fontSize: 22,
     ml: 1,
     fontFamily: 'Oswald',
+    
   };
   
   /***********************
@@ -44,9 +47,10 @@ export const appWrapper = {
    ************************/
   
   export const sideListWrapper = {
+    
     width: '100%',
-    bgcolor: 'background.paper',
-    borderRight: '1px solid #ddd',
+    bgcolor: '#0F103F',
+    borderRight: '1px solid #2F4F',
   };
   
   /***********************
