@@ -16,7 +16,7 @@ const SideList = () => {
     <Box sx={sideListWrapper}>
       {sideListItems.map((item) => {
         return (
-          <React.Fragment key={item.id}>
+          <React.Fragment key={item.id } >
             {item.subdivision ? (
               <>
                 <Divider />

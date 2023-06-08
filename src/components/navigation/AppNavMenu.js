@@ -26,17 +26,17 @@ const AppNavMenu =(props) =>{
             <Box sx={toolbarWrapper}>
                 <Box sx={flexAlignCenter}>
                     <IconButton 
-                    color='inherit' 
+                    color='white' 
                     aria-label='open drawer' 
                     edge='start' 
                     onClick={props.handleDrawerToggle}
                     sx={{mr:2}}
                     >
-                        <MenuIcon/>
+                        <MenuIcon sx={{color:"white"}}/>
                     </IconButton>
-                    <AiFillYoutube size={32}/>
+                    <AiFillYoutube size={32} color='white'/>
                     <Typography variant='h6' component="div" sx={logoText}>
-                       Youtube
+                       Ytube
                     </Typography>
                 </Box>
                 {/* <Box sx={hideOnMobile}>

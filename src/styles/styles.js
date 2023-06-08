@@ -39,6 +39,7 @@ export const appWrapper = {
     fontSize: 22,
     ml: 1,
     fontFamily: 'Oswald',
+    color: 'white',
     
   };
   
