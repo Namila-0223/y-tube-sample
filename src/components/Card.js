@@ -1,6 +1,6 @@
 import { AiFillCheckCircle } from 'react-icons/ai';
 import { appCardList, flexColumnCenter } from '../styles/styles';
-import { trimText } from '@data/app.data';
+import { trimText } from '../data/app.data';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/system/Box';
 import Card from '@mui/material/Card';
@@ -32,7 +32,7 @@ const AppCard = ({ url, title, channelTitle, videoId }) => {
               <Typography
                 sx={{ fontWeight: 'bold', mb: 1 }}
                 gutterBottom
-                variant="h5"
+                variant= "h5"
                 component="div"
               >
                 {trimText(title)}
@@ -41,7 +41,7 @@ const AppCard = ({ url, title, channelTitle, videoId }) => {
                 <Typography
                   sx={{ mr: 1, mb: 0, p: 0 }}
                   gutterBottom
-                  variant="h5"
+                  variant='h6'
                   component="div"
                 >
                   {channelTitle}

@@ -13,7 +13,7 @@ const CardList = ({ items }) => {
             const { videoId } = item.id;
             const { thumbnails, title, channelTitle } = item.snippet;
             return (
-              <Grid key={key} item xs={12} sm={6} md={4} lg={3}>
+              <Grid key={key} item xs={2} sm={4} md={4} lg={3}>
                 <AppCard
                   url={thumbnails.high.url}
                   title={title}
