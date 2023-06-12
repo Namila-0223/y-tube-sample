@@ -95,6 +95,7 @@ export const appWrapper = {
     mt: 8,
     width: '100vw',
     overflow: 'hidden',
+    backgroundColor:'#0B0B3C',
   };
   
   /************************

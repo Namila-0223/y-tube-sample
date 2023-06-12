@@ -21,7 +21,7 @@ const TabList = () => {
         aria-label="scrollable tabs"
       >
         {tabItems.map((item) => {
-          return <Tab key={item.id} label={item.text} />;
+          return <Tab key={item.id} label={item.text} sx={{ color: 'white'}} />;
         })}
       </Tabs>
     </Box>
