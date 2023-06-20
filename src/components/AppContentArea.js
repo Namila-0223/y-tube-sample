@@ -8,8 +8,7 @@ import { youtubeResponse } from '../data/app.data';
 
 
 const AppContentArea = ({ isOpen }) => {
-  const items1 = youtubeResponse.slice(0, 8);
-  const items2 = youtubeResponse.slice(8);
+
 
   const sideBarWidth = isOpen ? '70px' : '250px';
   return (
@@ -46,8 +45,7 @@ const AppContentArea = ({ isOpen }) => {
             width: `calc(100vw - ${sideBarWidth})`,
           }}
         >
-          <CardList items={items1} />
-          <CardList items={items2} />
+          <p>test1</p>
         </Box>
       </Box>
     </Box>
